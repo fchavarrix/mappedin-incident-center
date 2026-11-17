@@ -1,0 +1,20 @@
+{
+  "name": "mappedin-incident-center",
+  "version": "0.1.0",
+  "description": "Incident center demo on Mappedin JS v6: every incident is a place, not a call",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "sh scripts/deploy.sh"
+  },
+  "dependencies": {
+    "@mappedin/mappedin-js": "^6.30.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}
