@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1a2b" />
+    <title>Centro de incidentes · Demo</title>
+    <meta name="description" content="Cada incidente es un lugar, no una llamada: una consola de seguridad sobre el mapa interior de un mall, con cámaras, rondas, despacho del guardia más cercano y rutas de evacuación. Datos simulados." />
+    <meta property="og:title" content="Centro de incidentes · Demo" />
+    <meta property="og:description" content="Cada incidente es un lugar, no una llamada. Consola de seguridad sobre el mapa interior de un mall, con datos simulados." />
+    <meta property="og:image" content="https://incident-center-demo.atlas-lac.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1a2b'/%3E%3Cpath d='M16 6c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z' fill='%23ff5a3c'/%3E%3Ccircle cx='16' cy='13' r='2.6' fill='%23fff'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <script type="module" crossorigin src="/assets/index-C05Kc-JG.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/three.core-zG-_dA1_.js">
+    <link rel="modulepreload" crossorigin href="/assets/BufferGeometryUtils-CFBaiboi.js">
+    <link rel="modulepreload" crossorigin href="/assets/chunk-X2E2A75O-7Kpzlo6o.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-4Sl87l5K.css">
+  </head>
+  <body>
+    <div id="map" aria-label="Mapa del mall"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2.5c-3.6 0-6.4 2.8-6.4 6.4 0 4.6 6.4 12.6 6.4 12.6s6.4-8 6.4-12.6c0-3.6-2.8-6.4-6.4-6.4z" fill="#ff5a3c"/><circle cx="12" cy="8.9" r="2.4" fill="#fff"/></svg>
+        </span>
+        <div class="brand-text">
+          <strong id="t-title"></strong>
+          <small id="t-subtitle"></small>
+        </div>
+      </div>
+      <span class="clock" id="clock" aria-live="off"></span>
+      <label class="floor"><select id="floor" aria-label="Piso"></select></label>
+      <button class="lang" id="lang" type="button"></button>
+    </header>
+
+    <section class="panel" id="panel" aria-live="polite">
+      <button class="grabber" id="grabber" type="button" aria-label="Más o menos mapa"><span></span></button>
+      <div class="panel-body" id="panel-body"></div>
+      <p class="credit" id="credit"></p>
+    </section>
+
+    <div class="speed" id="speed" hidden></div>
+    <div class="loading" id="loading"></div>
+  </body>
+</html>
