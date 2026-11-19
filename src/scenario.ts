@@ -81,7 +81,7 @@ export function buildScenario(mapData: MapData, mapView: MapView): Scenario {
 
   // Guard-tour checkpoints: entrances, lifts, restrooms, information, parking, food court.
   const rand = seeded(20261201);
-  const guardNames = ['R. Quispe', 'L. Mamani', 'C. Rojas', 'J. Huamán'];
+  const guardNames = ['R. Salazar', 'L. Navarro', 'C. Rojas', 'J. Herrera'];
   const cps: { name: string; at: Coordinate; floor: Floor }[] = [];
   for (const e of exits) cps.push({ name: `exit:${e.n}`, at: e.space.center, floor: e.floor });
   for (const c of connections) {
